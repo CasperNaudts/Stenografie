@@ -1,0 +1,17 @@
+﻿<Window x:Name="BasicSecurity" x:Class="Crypto.Gui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="BasicSecurity" Height="344.791" Width="531.25">
+    <Grid>
+        <Button x:Name="BrowseImageButton" Content="Browse for an image" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="125" Click="browseImageButton_Click"/>
+        <Button x:Name="HideButton" Content="Hide the data" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="125" Click="HideData"/>
+        <Button x:Name="DiscoverButton" Content="Rediscover the data" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="125" Click="discoverButton_Click"/>
+        <Image x:Name="SelectedImage" HorizontalAlignment="Left" Height="187" Margin="140,10,0,0" VerticalAlignment="Top" Width="373"/>
+        <TextBox x:Name="RichTextBox" HorizontalAlignment="Left" Height="103" Margin="140,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" ToolTip="Your hidden text comes here"/>
+        <CheckBox x:Name="EncrypedCheckBox" Content="Enable password" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="PasswordPassword" HorizontalAlignment="Left" Height="23" Margin="10,282,0,0" VerticalAlignment="Top" Width="120" ToolTip="Your password here"/>
+    </Grid>
+</Window>
